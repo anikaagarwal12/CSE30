@@ -1,0 +1,2 @@
+in/cmd1: line 2: 32631 Segmentation fault      ./cipher -e -b in/BOOK
+./cipher returned EXIT_FAILURE

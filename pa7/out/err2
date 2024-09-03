@@ -1,0 +1,3 @@
+./cipher: You must specify either -e or -d
+Usage: ./cipher [-d|-e] -b <bookfile>
+./cipher returned EXIT_FAILURE

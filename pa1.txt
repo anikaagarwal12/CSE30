@@ -1,0 +1,675 @@
+Script started on 2024-04-03 17:33:53-07:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="72" LINES="34"]
+ana012@pi-cluster-128:~/cse30$ ls -la ~/.ssh
+total 40
+drwxr-s---  2 ana012 uucp  4096 Apr  2 16:48 .
+drwxr-s--- 23 ana012 uucp  4096 Apr  3 17:33 ..
+-rw-r-----  1 ana012 uucp   575 Feb 21 11:06 authorized_keys
+-rw-------  1 ana012 uucp 12288 Apr  2 16:48 .config.swp
+-rw-------  1 ana012 uucp  1679 Feb 21 11:07 id_rsa
+-rw-r-----  1 ana012 uucp   407 Feb 21 11:07 id_rsa.pub
+-rw-r--r--  1 ana012 uucp  5319 Feb 26 10:50 known_hosts
+ana012@pi-cluster-128:~/cse30$ ls -laR pa1
+pa1:
+total 32
+drwxr-sr-x 4 ana012 uucp  4096 Apr  2 17:42 .
+drwxr-sr-x 4 ana012 uucp  4096 Apr  3 17:32 ..
+drwxr-sr-x 8 ana012 uucp  4096 Apr  2 17:24 .git
+-rwxr-xr-x 1 ana012 uucp 10380 Apr  2 17:06 hello
+-rw-r--r-- 1 ana012 uucp   109 Apr  2 17:24 hello.c
+drwxr-sr-x 3 ana012 uucp  4096 Apr  2 17:50 pa1b
+
+pa1/.git:
+total 44
+drwxr-sr-x  8 ana012 uucp 4096 Apr  2 17:24 .
+drwxr-sr-x  4 ana012 uucp 4096 Apr  2 17:42 ..
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:06 branches
+-rw-r--r--  1 ana012 uucp   15 Apr  2 17:10 COMMIT_EDITMSG
+-rw-r--r--  1 ana012 uucp   92 Apr  2 17:06 config
+-rw-r--r--  1 ana012 uucp   73 Apr  2 17:06 description
+-rw-r--r--  1 ana012 uucp   23 Apr  2 17:06 HEAD
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:06 hooks
+-rw-r--r--  1 ana012 uucp  118 Apr  2 17:24 index
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:06 info
+drwxr-sr-x  3 ana012 uucp 4096 Apr  2 17:06 logs
+drwxr-sr-x 11 ana012 uucp 4096 Apr  2 17:11 objects
+drwxr-sr-x  4 ana012 uucp 4096 Apr  2 17:06 refs
+
+pa1/.git/branches:
+total 8
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:06 .
+drwxr-sr-x 8 ana012 uucp 4096 Apr  2 17:24 ..
+
+pa1/.git/hooks:
+total 56
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:06 .
+drwxr-sr-x 8 ana012 uucp 4096 Apr  2 17:24 ..
+-rwxr-xr-x 1 ana012 uucp  478 Apr  2 17:06 applypatch-msg.sample
+-rwxr-xr-x 1 ana012 uucp  896 Apr  2 17:06 commit-msg.sample
+-rwxr-xr-x 1 ana012 uucp 3327 Apr  2 17:06 fsmonitor-watchman.sample
+-rwxr-xr-x 1 ana012 uucp  189 Apr  2 17:06 post-update.sample
+-rwxr-xr-x 1 ana012 uucp  424 Apr  2 17:06 pre-applypatch.sample
+-rwxr-xr-x 1 ana012 uucp 1638 Apr  2 17:06 pre-commit.sample
+-rwxr-xr-x 1 ana012 uucp 1492 Apr  2 17:06 prepare-commit-msg.sample
+-rwxr-xr-x 1 ana012 uucp 1348 Apr  2 17:06 pre-push.sample
+-rwxr-xr-x 1 ana012 uucp 4898 Apr  2 17:06 pre-rebase.sample
+-rwxr-xr-x 1 ana012 uucp  544 Apr  2 17:06 pre-receive.sample
+-rwxr-xr-x 1 ana012 uucp 3610 Apr  2 17:06 update.sample
+
+pa1/.git/info:
+total 12
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:06 .
+drwxr-sr-x 8 ana012 uucp 4096 Apr  2 17:24 ..
+-rw-r--r-- 1 ana012 uucp  240 Apr  2 17:06 exclude
+
+pa1/.git/logs:
+total 16
+drwxr-sr-x 3 ana012 uucp 4096 Apr  2 17:06 .
+drwxr-sr-x 8 ana012 uucp 4096 Apr  2 17:24 ..
+-rw-r--r-- 1 ana012 uucp  313 Apr  2 17:10 HEAD
+drwxr-sr-x 3 ana012 uucp 4096 Apr  2 17:06 refs
+
+pa1/.git/logs/refs:
+total 12
+drwxr-sr-x 3 ana012 uucp 4096 Apr  2 17:06 .
+drwxr-sr-x 3 ana012 uucp 4096 Apr  2 17:06 ..
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:06 heads
+
+pa1/.git/logs/refs/heads:
+total 12
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:06 .
+drwxr-sr-x 3 ana012 uucp 4096 Apr  2 17:06 ..
+-rw-r--r-- 1 ana012 uucp  313 Apr  2 17:10 master
+
+pa1/.git/objects:
+total 44
+drwxr-sr-x 11 ana012 uucp 4096 Apr  2 17:11 .
+drwxr-sr-x  8 ana012 uucp 4096 Apr  2 17:24 ..
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:06 18
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:06 48
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:10 82
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:10 a4
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:11 b9
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:06 c8
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:08 e1
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:06 info
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:06 pack
+
+pa1/.git/objects/18:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:06 .
+drwxr-sr-x 11 ana012 uucp 4096 Apr  2 17:11 ..
+-r--r--r--  1 ana012 uucp  128 Apr  2 17:06 b87b11aa71c6214ddf1b358ad82e0d365a6171
+
+pa1/.git/objects/48:
+total 8
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:06 .
+drwxr-sr-x 11 ana012 uucp 4096 Apr  2 17:11 ..
+-r--r--r--  1 ana012 uucp   52 Apr  2 17:06 5aaff634beb365aa6e81200e5e6f0de7890399
+
+pa1/.git/objects/82:
+total 8
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:10 .
+drwxr-sr-x 11 ana012 uucp 4096 Apr  2 17:11 ..
+-r--r--r--  1 ana012 uucp   54 Apr  2 17:10 ae10767c1835c06b93778e645309f259cab0d4
+
+pa1/.git/objects/a4:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:10 .
+drwxr-sr-x 11 ana012 uucp 4096 Apr  2 17:11 ..
+-r--r--r--  1 ana012 uucp  153 Apr  2 17:10 c95971a2ead09d51fa16b1c76d374d87b792ac
+
+pa1/.git/objects/b9:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:11 .
+drwxr-sr-x 11 ana012 uucp 4096 Apr  2 17:11 ..
+-r--r--r--  1 ana012 uucp  112 Apr  2 17:11 12e45e930fc5bc9d6e44fe052bb2b6b1db703f
+
+pa1/.git/objects/c8:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:06 .
+drwxr-sr-x 11 ana012 uucp 4096 Apr  2 17:11 ..
+-r--r--r--  1 ana012 uucp  109 Apr  2 17:06 0fba1116a15e680c32bebe72ccacc2cd3d0a84
+
+pa1/.git/objects/e1:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:08 .
+drwxr-sr-x 11 ana012 uucp 4096 Apr  2 17:11 ..
+-r--r--r--  1 ana012 uucp  111 Apr  2 17:08 b21229c25ddeaca5eacddf4391d0c2f45897aa
+
+pa1/.git/objects/info:
+total 8
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:06 .
+drwxr-sr-x 11 ana012 uucp 4096 Apr  2 17:11 ..
+
+pa1/.git/objects/pack:
+total 8
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:06 .
+drwxr-sr-x 11 ana012 uucp 4096 Apr  2 17:11 ..
+
+pa1/.git/refs:
+total 16
+drwxr-sr-x 4 ana012 uucp 4096 Apr  2 17:06 .
+drwxr-sr-x 8 ana012 uucp 4096 Apr  2 17:24 ..
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:10 heads
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:06 tags
+
+pa1/.git/refs/heads:
+total 8
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:10 .
+drwxr-sr-x 4 ana012 uucp 4096 Apr  2 17:06 ..
+-rw-r--r-- 1 ana012 uucp   41 Apr  2 17:10 master
+
+pa1/.git/refs/tags:
+total 8
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:06 .
+drwxr-sr-x 4 ana012 uucp 4096 Apr  2 17:06 ..
+
+pa1/pa1b:
+total 160
+drwxr-sr-x 3 ana012 uucp   4096 Apr  2 17:50 .
+drwxr-sr-x 4 ana012 uucp   4096 Apr  2 17:42 ..
+-rw-r--r-- 1 ana012 uucp 106355 Apr  2 17:42 Academic-Integrity-CSE30.pdf
+drwxr-sr-x 8 ana012 uucp   4096 Apr  2 17:42 .git
+-rw-r--r-- 1 ana012 uucp  11357 Apr  2 17:42 LICENSE
+-rw-r--r-- 1 ana012 uucp    761 Apr  2 17:42 Makefile
+-rwxr-xr-x 1 ana012 uucp  10736 Apr  2 17:42 pa1
+-rw-r--r-- 1 ana012 uucp    737 Apr  2 17:42 pa1.c
+-rw-r--r-- 1 ana012 uucp     51 Apr  2 17:42 pa1.h
+-rw-r--r-- 1 ana012 uucp   4896 Apr  2 17:42 pa1.o
+-rw-r--r-- 1 ana012 uucp     13 Apr  2 17:42 README.md
+
+pa1/pa1b/.git:
+total 48
+drwxr-sr-x  8 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x  3 ana012 uucp 4096 Apr  2 17:50 ..
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 branches
+-rw-r--r--  1 ana012 uucp  262 Apr  2 17:42 config
+-rw-r--r--  1 ana012 uucp   73 Apr  2 17:42 description
+-rw-r--r--  1 ana012 uucp   21 Apr  2 17:42 HEAD
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 hooks
+-rw-r--r--  1 ana012 uucp  521 Apr  2 17:42 index
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 info
+drwxr-sr-x  3 ana012 uucp 4096 Apr  2 17:42 logs
+drwxr-sr-x 19 ana012 uucp 4096 Apr  2 17:42 objects
+-rw-r--r--  1 ana012 uucp  112 Apr  2 17:42 packed-refs
+drwxr-sr-x  5 ana012 uucp 4096 Apr  2 17:42 refs
+
+pa1/pa1b/.git/branches:
+total 8
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 8 ana012 uucp 4096 Apr  2 17:42 ..
+
+pa1/pa1b/.git/hooks:
+total 56
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 8 ana012 uucp 4096 Apr  2 17:42 ..
+-rwxr-xr-x 1 ana012 uucp  478 Apr  2 17:42 applypatch-msg.sample
+-rwxr-xr-x 1 ana012 uucp  896 Apr  2 17:42 commit-msg.sample
+-rwxr-xr-x 1 ana012 uucp 3327 Apr  2 17:42 fsmonitor-watchman.sample
+-rwxr-xr-x 1 ana012 uucp  189 Apr  2 17:42 post-update.sample
+-rwxr-xr-x 1 ana012 uucp  424 Apr  2 17:42 pre-applypatch.sample
+-rwxr-xr-x 1 ana012 uucp 1638 Apr  2 17:42 pre-commit.sample
+-rwxr-xr-x 1 ana012 uucp 1492 Apr  2 17:42 prepare-commit-msg.sample
+-rwxr-xr-x 1 ana012 uucp 1348 Apr  2 17:42 pre-push.sample
+-rwxr-xr-x 1 ana012 uucp 4898 Apr  2 17:42 pre-rebase.sample
+-rwxr-xr-x 1 ana012 uucp  544 Apr  2 17:42 pre-receive.sample
+-rwxr-xr-x 1 ana012 uucp 3610 Apr  2 17:42 update.sample
+
+pa1/pa1b/.git/info:
+total 12
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 8 ana012 uucp 4096 Apr  2 17:42 ..
+-rw-r--r-- 1 ana012 uucp  240 Apr  2 17:42 exclude
+
+pa1/pa1b/.git/logs:
+total 16
+drwxr-sr-x 3 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 8 ana012 uucp 4096 Apr  2 17:42 ..
+-rw-r--r-- 1 ana012 uucp  178 Apr  2 17:42 HEAD
+drwxr-sr-x 4 ana012 uucp 4096 Apr  2 17:42 refs
+
+pa1/pa1b/.git/logs/refs:
+total 16
+drwxr-sr-x 4 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 3 ana012 uucp 4096 Apr  2 17:42 ..
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:42 heads
+drwxr-sr-x 3 ana012 uucp 4096 Apr  2 17:42 remotes
+
+pa1/pa1b/.git/logs/refs/heads:
+total 12
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 4 ana012 uucp 4096 Apr  2 17:42 ..
+-rw-r--r-- 1 ana012 uucp  178 Apr  2 17:42 main
+
+pa1/pa1b/.git/logs/refs/remotes:
+total 12
+drwxr-sr-x 3 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 4 ana012 uucp 4096 Apr  2 17:42 ..
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:42 origin
+
+pa1/pa1b/.git/logs/refs/remotes/origin:
+total 12
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 3 ana012 uucp 4096 Apr  2 17:42 ..
+-rw-r--r-- 1 ana012 uucp  178 Apr  2 17:42 HEAD
+
+pa1/pa1b/.git/objects:
+total 76
+drwxr-sr-x 19 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x  8 ana012 uucp 4096 Apr  2 17:42 ..
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 26
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 42
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 49
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 66
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 6c
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 76
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 7f
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 81
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 a0
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 ae
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 cb
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 ce
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 d2
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 dc
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 ee
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 info
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 pack
+
+pa1/pa1b/.git/objects/26:
+total 16
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 19 ana012 uucp 4096 Apr  2 17:42 ..
+-r--r--r--  1 ana012 uucp 4447 Apr  2 17:42 1eeb9e9f8b2b4b0d119366dda99c6fd7d35c64
+
+pa1/pa1b/.git/objects/42:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 19 ana012 uucp 4096 Apr  2 17:42 ..
+-r--r--r--  1 ana012 uucp  471 Apr  2 17:42 23a6300d7095f459935a00d2650b04dd040133
+
+pa1/pa1b/.git/objects/49:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 19 ana012 uucp 4096 Apr  2 17:42 ..
+-r--r--r--  1 ana012 uucp  160 Apr  2 17:42 58e4890a2188b69479ea29907a299d03b6cd09
+
+pa1/pa1b/.git/objects/66:
+total 8
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 19 ana012 uucp 4096 Apr  2 17:42 ..
+-r--r--r--  1 ana012 uucp   29 Apr  2 17:42 fb3396c7284eec9851b9e27a1ae09b852cad70
+
+pa1/pa1b/.git/objects/6c:
+total 8
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 19 ana012 uucp 4096 Apr  2 17:42 ..
+-r--r--r--  1 ana012 uucp   53 Apr  2 17:42 e007446e57a5b96883a93d7906fa6da926b553
+
+pa1/pa1b/.git/objects/76:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 19 ana012 uucp 4096 Apr  2 17:42 ..
+-r--r--r--  1 ana012 uucp  172 Apr  2 17:42 9031925806fd34c485c27cae4d40c927b79060
+
+pa1/pa1b/.git/objects/7f:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 19 ana012 uucp 4096 Apr  2 17:42 ..
+-r--r--r--  1 ana012 uucp  834 Apr  2 17:42 5a20976ae45a3d626680e8168d18e53a6a7296
+
+pa1/pa1b/.git/objects/81:
+total 112
+drwxr-sr-x  2 ana012 uucp   4096 Apr  2 17:42 .
+drwxr-sr-x 19 ana012 uucp   4096 Apr  2 17:42 ..
+-r--r--r--  1 ana012 uucp 101698 Apr  2 17:42 30f86049c2821fb578f606aaf5fc821fdcc8ab
+
+pa1/pa1b/.git/objects/a0:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 19 ana012 uucp 4096 Apr  2 17:42 ..
+-r--r--r--  1 ana012 uucp  833 Apr  2 17:42 f4cf8b8c85f077fb396c8fcb8bca5cc6fb500a
+
+pa1/pa1b/.git/objects/ae:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 19 ana012 uucp 4096 Apr  2 17:42 ..
+-r--r--r--  1 ana012 uucp   85 Apr  2 17:42 460129cbce5d80c0d99ae5f7f89c11ec611435
+
+pa1/pa1b/.git/objects/cb:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 19 ana012 uucp 4096 Apr  2 17:42 ..
+-r--r--r--  1 ana012 uucp  224 Apr  2 17:42 5daa363fa1a604dba1df61f1bef7d7ac0fd767
+
+pa1/pa1b/.git/objects/ce:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 19 ana012 uucp 4096 Apr  2 17:42 ..
+-r--r--r--  1 ana012 uucp  796 Apr  2 17:42 801b89d3d0ac298b63896e6faf6d48298a6f6b
+
+pa1/pa1b/.git/objects/d2:
+total 140
+drwxr-sr-x  2 ana012 uucp   4096 Apr  2 17:42 .
+drwxr-sr-x 19 ana012 uucp   4096 Apr  2 17:42 ..
+-r--r--r--  1 ana012 uucp 129391 Apr  2 17:42 c8d7ed3fea62072d5d5f821e0c0628d4b737ba
+
+pa1/pa1b/.git/objects/dc:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 19 ana012 uucp 4096 Apr  2 17:42 ..
+-r--r--r--  1 ana012 uucp  429 Apr  2 17:42 70fd55d6480f5e03abe26ff2be5b7aee0dcb6c
+
+pa1/pa1b/.git/objects/ee:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 19 ana012 uucp 4096 Apr  2 17:42 ..
+-r--r--r--  1 ana012 uucp  224 Apr  2 17:42 2ba5680ac3e75d739b3eef780420bac95e8c03
+
+pa1/pa1b/.git/objects/info:
+total 8
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 19 ana012 uucp 4096 Apr  2 17:42 ..
+
+pa1/pa1b/.git/objects/pack:
+total 8
+drwxr-sr-x  2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 19 ana012 uucp 4096 Apr  2 17:42 ..
+
+pa1/pa1b/.git/refs:
+total 20
+drwxr-sr-x 5 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 8 ana012 uucp 4096 Apr  2 17:42 ..
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:42 heads
+drwxr-sr-x 3 ana012 uucp 4096 Apr  2 17:42 remotes
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:42 tags
+
+pa1/pa1b/.git/refs/heads:
+total 8
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 5 ana012 uucp 4096 Apr  2 17:42 ..
+-rw-r--r-- 1 ana012 uucp   41 Apr  2 17:42 main
+
+pa1/pa1b/.git/refs/remotes:
+total 12
+drwxr-sr-x 3 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 5 ana012 uucp 4096 Apr  2 17:42 ..
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:42 origin
+
+pa1/pa1b/.git/refs/remotes/origin:
+total 8
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 3 ana012 uucp 4096 Apr  2 17:42 ..
+-rw-r--r-- 1 ana012 uucp   30 Apr  2 17:42 HEAD
+
+pa1/pa1b/.git/refs/tags:
+total 8
+drwxr-sr-x 2 ana012 uucp 4096 Apr  2 17:42 .
+drwxr-sr-x 5 ana012 uucp 4096 Apr  2 17:42 ..
+ana012@pi-cluster-128:~/cse30$ ls -laR pa1b
+ls: cannot access 'pa1b': No such file or directory
+ana012@pi-cluster-128:~/cse30$ ls -laR pa1b[K-starter
+pa1-starter:
+total 160
+drwxr-sr-x 3 ana012 uucp   4096 Apr  3 17:33 .
+drwxr-sr-x 4 ana012 uucp   4096 Apr  3 17:32 ..
+-rw-r--r-- 1 ana012 uucp 106355 Apr  3 15:28 Academic-Integrity-CSE30.pdf
+drwxr-sr-x 8 ana012 uucp   4096 Apr  3 15:28 .git
+-rw-r--r-- 1 ana012 uucp  11357 Apr  3 15:28 LICENSE
+-rw-r--r-- 1 ana012 uucp    761 Apr  3 15:28 Makefile
+-rwxr-xr-x 1 ana012 uucp  10736 Apr  3 17:32 pa1
+-rw-r--r-- 1 ana012 uucp    737 Apr  3 17:32 pa1.c
+-rw-r--r-- 1 ana012 uucp     51 Apr  3 15:28 pa1.h
+-rw-r--r-- 1 ana012 uucp   4884 Apr  3 17:32 pa1.o
+-rw-r--r-- 1 ana012 uucp     61 Apr  3 15:28 README.md
+
+pa1-starter/.git:
+total 48
+drwxr-sr-x  8 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x  3 ana012 uucp 4096 Apr  3 17:33 ..
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 branches
+-rw-r--r--  1 ana012 uucp  262 Apr  3 15:28 config
+-rw-r--r--  1 ana012 uucp   73 Apr  3 15:28 description
+-rw-r--r--  1 ana012 uucp   21 Apr  3 15:28 HEAD
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 hooks
+-rw-r--r--  1 ana012 uucp  521 Apr  3 15:28 index
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 info
+drwxr-sr-x  3 ana012 uucp 4096 Apr  3 15:28 logs
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 objects
+-rw-r--r--  1 ana012 uucp  112 Apr  3 15:28 packed-refs
+drwxr-sr-x  5 ana012 uucp 4096 Apr  3 15:28 refs
+
+pa1-starter/.git/branches:
+total 8
+drwxr-sr-x 2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 8 ana012 uucp 4096 Apr  3 15:28 ..
+
+pa1-starter/.git/hooks:
+total 56
+drwxr-sr-x 2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 8 ana012 uucp 4096 Apr  3 15:28 ..
+-rwxr-xr-x 1 ana012 uucp  478 Apr  3 15:28 applypatch-msg.sample
+-rwxr-xr-x 1 ana012 uucp  896 Apr  3 15:28 commit-msg.sample
+-rwxr-xr-x 1 ana012 uucp 3327 Apr  3 15:28 fsmonitor-watchman.sample
+-rwxr-xr-x 1 ana012 uucp  189 Apr  3 15:28 post-update.sample
+-rwxr-xr-x 1 ana012 uucp  424 Apr  3 15:28 pre-applypatch.sample
+-rwxr-xr-x 1 ana012 uucp 1638 Apr  3 15:28 pre-commit.sample
+-rwxr-xr-x 1 ana012 uucp 1492 Apr  3 15:28 prepare-commit-msg.sample
+-rwxr-xr-x 1 ana012 uucp 1348 Apr  3 15:28 pre-push.sample
+-rwxr-xr-x 1 ana012 uucp 4898 Apr  3 15:28 pre-rebase.sample
+-rwxr-xr-x 1 ana012 uucp  544 Apr  3 15:28 pre-receive.sample
+-rwxr-xr-x 1 ana012 uucp 3610 Apr  3 15:28 update.sample
+
+pa1-starter/.git/info:
+total 12
+drwxr-sr-x 2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 8 ana012 uucp 4096 Apr  3 15:28 ..
+-rw-r--r-- 1 ana012 uucp  240 Apr  3 15:28 exclude
+
+pa1-starter/.git/logs:
+total 16
+drwxr-sr-x 3 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 8 ana012 uucp 4096 Apr  3 15:28 ..
+-rw-r--r-- 1 ana012 uucp  178 Apr  3 15:28 HEAD
+drwxr-sr-x 4 ana012 uucp 4096 Apr  3 15:28 refs
+
+pa1-starter/.git/logs/refs:
+total 16
+drwxr-sr-x 4 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 3 ana012 uucp 4096 Apr  3 15:28 ..
+drwxr-sr-x 2 ana012 uucp 4096 Apr  3 15:28 heads
+drwxr-sr-x 3 ana012 uucp 4096 Apr  3 15:28 remotes
+
+pa1-starter/.git/logs/refs/heads:
+total 12
+drwxr-sr-x 2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 4 ana012 uucp 4096 Apr  3 15:28 ..
+-rw-r--r-- 1 ana012 uucp  178 Apr  3 15:28 main
+
+pa1-starter/.git/logs/refs/remotes:
+total 12
+drwxr-sr-x 3 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 4 ana012 uucp 4096 Apr  3 15:28 ..
+drwxr-sr-x 2 ana012 uucp 4096 Apr  3 15:28 origin
+
+pa1-starter/.git/logs/refs/remotes/origin:
+total 12
+drwxr-sr-x 2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 3 ana012 uucp 4096 Apr  3 15:28 ..
+-rw-r--r-- 1 ana012 uucp  178 Apr  3 15:28 HEAD
+
+pa1-starter/.git/objects:
+total 88
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x  8 ana012 uucp 4096 Apr  3 15:28 ..
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 26
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 36
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 42
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 49
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 5b
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 66
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 6c
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 76
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 7f
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 81
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 a0
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 ae
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 b2
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 cb
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 ce
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 d2
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 dc
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 ee
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 info
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 pack
+
+pa1-starter/.git/objects/26:
+total 16
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp 4447 Apr  3 15:28 1eeb9e9f8b2b4b0d119366dda99c6fd7d35c64
+
+pa1-starter/.git/objects/36:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp   74 Apr  3 15:28 67234f7372f1faa6931bad2c253415bc575015
+
+pa1-starter/.git/objects/42:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp  471 Apr  3 15:28 23a6300d7095f459935a00d2650b04dd040133
+
+pa1-starter/.git/objects/49:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp  160 Apr  3 15:28 58e4890a2188b69479ea29907a299d03b6cd09
+
+pa1-starter/.git/objects/5b:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp  224 Apr  3 15:28 0943fa7f29575c5be8bdcaadbf579a76760d25
+
+pa1-starter/.git/objects/66:
+total 8
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp   29 Apr  3 15:28 fb3396c7284eec9851b9e27a1ae09b852cad70
+
+pa1-starter/.git/objects/6c:
+total 8
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp   53 Apr  3 15:28 e007446e57a5b96883a93d7906fa6da926b553
+
+pa1-starter/.git/objects/76:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp  172 Apr  3 15:28 9031925806fd34c485c27cae4d40c927b79060
+
+pa1-starter/.git/objects/7f:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp  834 Apr  3 15:28 5a20976ae45a3d626680e8168d18e53a6a7296
+
+pa1-starter/.git/objects/81:
+total 112
+drwxr-sr-x  2 ana012 uucp   4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp   4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp 101698 Apr  3 15:28 30f86049c2821fb578f606aaf5fc821fdcc8ab
+
+pa1-starter/.git/objects/a0:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp  833 Apr  3 15:28 f4cf8b8c85f077fb396c8fcb8bca5cc6fb500a
+
+pa1-starter/.git/objects/ae:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp   85 Apr  3 15:28 460129cbce5d80c0d99ae5f7f89c11ec611435
+
+pa1-starter/.git/objects/b2:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp  835 Apr  3 15:28 f320253ec7b52f9338b50a96e74b002a141011
+
+pa1-starter/.git/objects/cb:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp  224 Apr  3 15:28 5daa363fa1a604dba1df61f1bef7d7ac0fd767
+
+pa1-starter/.git/objects/ce:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp  796 Apr  3 15:28 801b89d3d0ac298b63896e6faf6d48298a6f6b
+
+pa1-starter/.git/objects/d2:
+total 140
+drwxr-sr-x  2 ana012 uucp   4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp   4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp 129391 Apr  3 15:28 c8d7ed3fea62072d5d5f821e0c0628d4b737ba
+
+pa1-starter/.git/objects/dc:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp  429 Apr  3 15:28 70fd55d6480f5e03abe26ff2be5b7aee0dcb6c
+
+pa1-starter/.git/objects/ee:
+total 12
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+-r--r--r--  1 ana012 uucp  224 Apr  3 15:28 2ba5680ac3e75d739b3eef780420bac95e8c03
+
+pa1-starter/.git/objects/info:
+total 8
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+
+pa1-starter/.git/objects/pack:
+total 8
+drwxr-sr-x  2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 22 ana012 uucp 4096 Apr  3 15:28 ..
+
+pa1-starter/.git/refs:
+total 20
+drwxr-sr-x 5 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 8 ana012 uucp 4096 Apr  3 15:28 ..
+drwxr-sr-x 2 ana012 uucp 4096 Apr  3 15:28 heads
+drwxr-sr-x 3 ana012 uucp 4096 Apr  3 15:28 remotes
+drwxr-sr-x 2 ana012 uucp 4096 Apr  3 15:28 tags
+
+pa1-starter/.git/refs/heads:
+total 8
+drwxr-sr-x 2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 5 ana012 uucp 4096 Apr  3 15:28 ..
+-rw-r--r-- 1 ana012 uucp   41 Apr  3 15:28 main
+
+pa1-starter/.git/refs/remotes:
+total 12
+drwxr-sr-x 3 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 5 ana012 uucp 4096 Apr  3 15:28 ..
+drwxr-sr-x 2 ana012 uucp 4096 Apr  3 15:28 origin
+
+pa1-starter/.git/refs/remotes/origin:
+total 8
+drwxr-sr-x 2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 3 ana012 uucp 4096 Apr  3 15:28 ..
+-rw-r--r-- 1 ana012 uucp   30 Apr  3 15:28 HEAD
+
+pa1-starter/.git/refs/tags:
+total 8
+drwxr-sr-x 2 ana012 uucp 4096 Apr  3 15:28 .
+drwxr-sr-x 5 ana012 uucp 4096 Apr  3 15:28 ..
+ana012@pi-cluster-128:~/cse30$ exit
+
+Script done on 2024-04-03 17:34:17-07:00 [COMMAND_EXIT_CODE="0"]

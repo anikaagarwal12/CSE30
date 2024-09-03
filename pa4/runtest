@@ -1,0 +1,123 @@
+#!/bin/bash
+# directory where the input data files are
+IN="in"
+# directory where the stdout and stderr are written
+OUT="out"
+# directory where the expected stdout and stderr data files are
+EXPECT="exp"
+# default program to run
+DEFPROG="./csv"
+# you can change the diff program by altering the assignment below
+# For comparing stdout
+STDOUTDIFF="diff"
+#for comparing stderr
+STDERRDIFF="diff -y"
+# hexdump
+HEXDUMP="hexdump -c"
+
+# make sure that PROG exists
+if [ ! -f $PROG ]; then
+    echo "Program to test: $PROG does not exist, exiting"
+    exit 1
+fi
+
+# check args
+
+if [ "$#" -lt "1" ]; then
+        echo "Usage: $0 test#"
+        exit 1;
+fi
+
+# run the test for each test number supplied as an argument
+for index in $@
+do
+    # if the command file does not exist, echo a warning then go to the next test
+    if [ -f $IN/cmd$index ]; then
+        PROG=$IN/cmd$index
+    else
+        PROG=$DEFPROG
+    fi 
+
+    # if the data file does not exist, echo a warning then go to the next test
+    if [ ! -f $IN/data$index ]; then
+        echo "Test data file $IN/data$index does not exist, skipping"
+        continue
+    fi 
+
+    # if the expected file does not exist, echo a warning then go to the next test
+    if [ ! -f $EXPECT/out$index ]; then
+        echo "Test expected output file $EXPECT/out$index does not exist, skipping"
+        continue
+    fi 
+
+    # if the expected error file does not exist, echo a warning then go to the next test
+    if [ ! -f $EXPECT/err$index ]; then
+        echo "Test expected stderr error file $EXPECT/err$index does not exist, skipping"
+        continue
+    fi 
+
+
+    echo
+    echo "----- Starting test number $index -----"
+
+    # remove any old output files
+    rm -f $OUT/out$index $OUT/err$index
+    echo "Running $PROG < $IN/data$index > $OUT/out$index 2> $OUT/err$index"
+
+    # run the test
+    $PROG < $IN/data$index > $OUT/out$index 2> $OUT/err$index 
+
+    # show the return value from running the program
+    if [ $? -eq 0 ]; then
+        echo "    $PROG returned EXIT_SUCCESS after running this test"
+    else
+        echo "    $PROG returned EXIT_FAILURE after running this test"
+    fi
+    # compare the expected output with the actual output
+    # cmp -s has a return value of 0 if they are the same, otherwise they are different
+    cmp -s $EXPECT/out$index $OUT/out$index
+    
+    # now check the return value of the cmp
+    if [ $? -ne 0 ]; then
+        echo "**** Standard out   on test number $index failed ****"
+
+        # check if the output exist, if not the command did not run
+        if [ -f $OUT/out$index ]; then
+            echo "Comparing with $HEXDUMP"
+            echo "Input: $IN/data$index"
+            $HEXDUMP $IN/data$index
+            echo "Expected: $EXPECT/out$index"
+            $HEXDUMP $EXPECT/out$index
+            echo "Output: $OUT/out$index"
+            $HEXDUMP $OUT/out$index
+        else
+            echo "Standard out file is missing or empty: $OUT/out$index"
+        fi
+
+    else
+        echo "**** Standard out   on test number $index passed ****"
+    fi
+
+    # compare the expected output with the actual output
+    # cmp -s has a return value of 0 if they are the same, otherwise they are different
+    cmp -s $EXPECT/err$index $OUT/err$index
+
+    # now check the return value of the cmp
+    if [ $? -ne 0 ]; then
+        echo "**** Standard error on test number $index failed ****"
+
+        # check if the output exist, if not the command did not run
+        if [ -f $OUT/err$index ]; then
+            echo "  -- Comparing $EXPECT/err$index to $OUT/err$index"
+            $STDERRDIFF $EXPECT/err$index $OUT/err$index
+        else
+            echo "Standard error file is missing or empty: $OUT/err$index"
+        fi
+    else
+        echo "**** Standard error on test number $index passed ****"
+    fi
+
+    echo "----- Ending   test number $index -----"
+done
+echo
+echo "******* All Done *******"
